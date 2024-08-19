@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+ 
+.container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#new-item {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#add-button {
+    padding: 10px 20px;
+    border: none;
+    background: #5cb85c;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#add-button:hover {
+    background: #4cae4c;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.todo-item input[type="text"] {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    color: #333;
+}
+
+.todo-item.completed input[type="text"] {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buttons .edit-button {
+    color: #5bc0de;
+}
+
+.buttons .complete-button {
+    color: #5cb85c;
+}
+
+.buttons .delete-button {
+    color: #d9534f;
+}
+
+.buttons button:hover {
+    opacity: 0.7;
+}
+
+
